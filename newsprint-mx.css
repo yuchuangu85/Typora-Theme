@@ -81,12 +81,12 @@ html, body {
 }*/
 
 #write {
-	max-width: 64em;//设置页面宽度
+	max-width: 64em;/*设置页面宽度*/
 }
 
 @media only screen and (min-width: 1400px) {
 	#write {
-			max-width: 914px;
+			max-width: 1200px;
 	}
 }
 
@@ -138,7 +138,7 @@ h1 {
 	/*30 / 16*/
 	line-height: 1.6em;
 	/* 48 / 30*/
-	margin-top: 2em;
+	margin-top: 0em;
 }
 h2,
 h3 {
