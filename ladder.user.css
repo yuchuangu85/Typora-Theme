@@ -1,0 +1,19 @@
+/* you can override the default max-width size here or override each style by your custom css */
+
+#write {
+    font-size: 1.25rem;
+    line-height: 1.625rem;
+    max-width: 80rem;
+}
+
+p {
+    line-height: 2rem;
+}
+
+pre,
+code,
+kbd,
+tt,
+var {
+    font-size: 0.875em;
+}

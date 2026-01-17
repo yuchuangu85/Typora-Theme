@@ -1,4 +1,4 @@
-@include-when-export url(https://fonts.loli.net/css?family=Didact+Gothic&display=swap&subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext);
+@include-when-export url(https://fonts.googleapis.com/css?family=Didact+Gothic&display=swap&subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext);
 
 @font-face {
 	font-family: 'TeXGyreAdventor';
@@ -63,14 +63,14 @@
 }
 
 html,
-body,
-#write{
+body {
 	background: #fcfcfc;
 	background: var(--bg-color);
-	font-family: 'TeXGyreAdventor', "Century Gothic", "Didact Gothic", "Yu Gothic", 'Segoe UI Emoji', sans-serif;
+	font-family: 'TeXGyreAdventor', "Century Gothic", "Didact Gothic", "Yu Gothic", 'Segoe UI Emoji', 'SF Pro', sans-serif;
 	font-weight: 300;
 	-webkit-font-smoothing: antialiased;
 }
+
 h1,
 h2,
 h3,
@@ -295,16 +295,18 @@ input {
 }
 
 /* Chrome 29+ */
-@media screen and (-webkit-min-device-pixel-ratio:0)
-  and (min-resolution:.001dpcm) {
-    .task-list-item input:before {
-    	margin-top: -0.2rem;
-    }
+.task-list-item input:before {
+	margin-top: -0.2rem;
+}
 
-    .task-list-item input:checked:before,
-	.task-list-item input[checked]:before {
-		margin-top: -0.2rem;
-	}
+.task-list-item input:checked:before,
+.task-list-item input[checked]:before {
+	margin-top: -0.2rem;
+}
+
+.html-for-mac .task-list-item input:checked:before,
+.html-for-mac .task-list-item input[checked]:before {
+	margin-top: -0.8rem;
 }
 
 blockquote {
@@ -375,7 +377,7 @@ p.mathjax-block,
 	top: 14px;
 }
 
-#md-notification {
+#md-notification-container {
 	background: #eee;
 }
 

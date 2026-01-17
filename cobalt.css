@@ -71,7 +71,7 @@ body {
     background: #131b29;
     color: #a9aaab;
     margin: 0 auto;
-    max-width: 800px;
+    max-width: 1200px;
     padding: 30px;
     padding-bottom: 100px;
     position: static;
@@ -1020,4 +1020,236 @@ input {
 
 #write>p:only-child:empty::before {
     opacity: 1;
+}
+
+/* ========== Mermaid 暗黑主题样式 ========== */
+
+/* Mermaid 图表容器 */
+.md-fences.md-fences-mermaid {
+    background-color: #192534;
+    border: 1px solid #324560;
+    border-radius: 4px;
+    padding: 1rem;
+}
+
+/* Mermaid SVG 元素整体样式 */
+svg[id^="mermaid"] {
+    background-color: transparent;
+}
+
+/* 流程图节点样式 */
+.node rect,
+.node circle,
+.node ellipse,
+.node polygon,
+.node path {
+    fill: #1a283d !important;
+    stroke: #efb752 !important;
+    stroke-width: 2px !important;
+}
+
+/* 特殊节点样式 - 起始/结束节点 */
+.node.start rect,
+.node.end rect {
+    fill: #324963 !important;
+    stroke: #f0b752 !important;
+}
+
+/* 节点文本样式 */
+.nodeLabel,
+.nodeLabel p {
+    color: #ffffff !important;
+    fill: #ffffff !important;
+    font-weight: 500;
+}
+
+/* 边缘标签文本样式 */
+.edgeLabel,
+.edgeLabel p,
+.edgeLabel span {
+    background-color: #192534 !important;
+    color: #9dd6ed !important;
+    fill: #9dd6ed !important;
+}
+
+/* 连接线样式 */
+.edgePath path,
+.flowchart-link {
+    stroke: #6db7d1 !important;
+    stroke-width: 2px !important;
+}
+
+/* 箭头样式 */
+.arrowheadPath,
+marker path {
+    fill: #6db7d1 !important;
+    stroke: #6db7d1 !important;
+}
+
+/* 类图相关样式 */
+.classLabel .nodeLabel {
+    color: #ffd580 !important;
+}
+
+.classTitle {
+    font-weight: bold;
+    fill: #f0b752 !important;
+}
+
+/* 序列图样式 */
+.actor {
+    fill: #1a283d !important;
+    stroke: #efb752 !important;
+}
+
+/* 序列图 - 参与者名称/类名 */
+.actor-label,
+.actor text,
+tspan {
+    fill: #ffffff !important;
+    font-weight: 600 !important;
+}
+
+.actor-line {
+    stroke: #57708d !important;
+}
+
+.messageLine0,
+.messageLine1 {
+    stroke: #6db7d1 !important;
+}
+
+.messageText {
+    fill: #ffffff !important;
+    stroke: none !important;
+}
+
+.labelText {
+    fill: #ffffff !important;
+}
+
+.loopText,
+.loopLine {
+    fill: #9dd6ed !important;
+    stroke: #9dd6ed !important;
+}
+
+.note {
+    fill: #324963 !important;
+    stroke: #efb752 !important;
+}
+
+.noteText {
+    fill: #ffffff !important;
+}
+
+/* 甘特图样式 */
+.grid .tick {
+    stroke: #57708d !important;
+    stroke-width: 1px;
+}
+
+.grid path {
+    stroke-width: 0;
+}
+
+.taskText {
+    fill: #ffffff !important;
+}
+
+.taskTextOutsideRight,
+.taskTextOutsideLeft {
+    fill: #d0d1d2 !important;
+}
+
+.task {
+    fill: #1a283d !important;
+    stroke: #efb752 !important;
+}
+
+.taskTextOutside {
+    fill: #9dd6ed !important;
+}
+
+.active0,
+.active1,
+.active2,
+.active3 {
+    fill: #6db7d1 !important;
+    stroke: #efb752 !important;
+}
+
+.done0,
+.done1,
+.done2,
+.done3 {
+    fill: #324963 !important;
+    stroke: #57708d !important;
+}
+
+.crit0,
+.crit1,
+.crit2,
+.crit3 {
+    fill: #f0b752 !important;
+    stroke: #efb752 !important;
+}
+
+.activeCrit0,
+.activeCrit1,
+.activeCrit2,
+.activeCrit3 {
+    fill: #f4c25e !important;
+    stroke: #f0b752 !important;
+}
+
+/* 状态图样式 */
+.statediagram-state rect,
+.statediagram-state circle {
+    fill: #1a283d !important;
+    stroke: #efb752 !important;
+}
+
+.statediagram-state .state-title {
+    fill: #ffffff !important;
+    font-weight: bold;
+}
+
+/* ER 图样式 */
+.er.entityBox {
+    fill: #1a283d !important;
+    stroke: #efb752 !important;
+}
+
+.er.relationshipLabelBox {
+    fill: #192534 !important;
+    stroke: none !important;
+}
+
+.er.entityLabel,
+.er.relationshipLabel {
+    fill: #ffffff !important;
+}
+
+.er.attributeBoxEven,
+.er.attributeBoxOdd {
+    fill: #192534 !important;
+    stroke: #57708d !important;
+}
+
+/* 饼图样式 */
+.pieCircle {
+    stroke: #141b28 !important;
+}
+
+.pieTitleText {
+    fill: #ffffff !important;
+}
+
+.slice {
+    stroke-width: 2px;
+}
+
+.legendText {
+    fill: #d0d1d2 !important;
 }
